@@ -1,0 +1,36 @@
+# Spring Boot Application Configuration (Alternative YAML format)
+# Use this file instead of application.properties if you prefer YAML
+
+spring:
+  application:
+    name: spring-ai-chatbot
+
+  ai:
+    openai:
+      # OpenAI API Key - Set via environment variable OPENAI_API_KEY
+      api-key: ${OPENAI_API_KEY:your-api-key-here}
+      chat:
+        options:
+          # AI Model to use
+          model: gpt-3.5-turbo
+          # Temperature controls randomness (0.0-2.0)
+          # Lower values make output more focused and deterministic
+          # Higher values make output more random and creative
+          temperature: 0.7
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.example.springaichatbot: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+
+info:
+  app:
+    name: Spring AI Chatbot
+    description: A simple AI chatbot REST API using Spring AI and OpenAI
+    version: 1.0.0
+

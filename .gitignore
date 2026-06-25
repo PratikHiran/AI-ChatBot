@@ -1,0 +1,77 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+bin/
+.factorypath
+
+# IntelliJ
+out/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+*.log.*
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Run/Build artifacts
+*.exe
+build/
+dist/
+
+# API Keys and Secrets
+secrets.properties
+*.key
+*.pem
+
+# OS generated files
+desktop.ini
+
